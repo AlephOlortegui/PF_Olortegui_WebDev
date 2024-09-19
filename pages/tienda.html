@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fachero Store | Tienda</title>
+    <!-- Bootstrap library -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- website icon -->
+    <link rel="icon" href="../assets/web_icon.png">
+    <!-- metaTags SEO -->
+     <meta name="description" content="tienda de ropa, las mas comodas y de buen gusto">
+     <meta name="keywords" content="ropa, chompas, poleras, pijamas, pantalones">
+  </head>
+</head>
+<body>
+  <header>
+    <!-- Top Message -->
+    <div class="intro text-center">
+      <span class="intro_big_icon"><i class="bi bi-star"></i></span>
+      <p class="intro_mensaje mb-0" data-aos="fade-left"><span class="intro_icon p-1"><i class="bi bi-star"></i></span> Productos de alta calidad</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm px-3">
+      <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand text-center position-relative me-4">
+          <p class="title mb-0">El Fachero</p>
+          <p class="sub-title mb-0">shopping</p>
+          <span class="position-absolute translate-middle badge">
+            <i class="bi bi-shop"></i>
+          </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav" aria-label="Toggle navigation" aria-controls="myNav" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse pt-2" id="myNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-wrap flex-md-nowrap justify-content-sm-center justify-content-md-start">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href='./tienda.html' class="nav-link active" aria-current="page">tienda <i class="bi bi-shop-window"></i></a>
+            </li>
+            <li class="nav-item ">
+              <a href='./registro.html' class="nav-link">registro <i class="bi bi-person-circle"></i></a>
+            </li>
+            <li class="nav-item ">
+              <a href='./carrito.html' class="nav-link"><span>carrito</span> <i class="bi bi-cart-fill"></i><span class="position-absolute top-50 translate-middle badge rounded-pill bg-danger">3</span></a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Tienda -->
+    <div class="container-fluid tienda">
+      <div class="row pb-4">
+        <!-- Filter menu -->
+        <div class="col-12 pt-3 pb-2 tiendaMenu">
+          <h1 class="text-center">Nuestros Productos</h1>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <button type="button" class="filter-btn active">todos</button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="filter-btn">chompas</button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="filter-btn">pantalones</button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="filter-btn">pijamas</button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="filter-btn">poleras</button>
+            </li>
+            <li class="nav-item"></li>
+              <button type="button" class="filter-btn">polos</button>
+            </li>
+          </ul>
+        </div>
+        <!-- productos -->
+        <div class="col-12 mt-3 mansoryLayout text-center" id="productos-container">
+          <!-- polos -->
+          <!-- <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/polo1.png" alt="Camiseta Deportiva con cuello en V, Chigago verde">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Camiseta Deportiva con cuello en V, Chigago verde</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>40</span><span class="text-up">34</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+
+          <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/polo2.png" alt="Polo rosado cuello redondo, marshmello logo">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Polo rosado con cuello redondo y logo de marshmello</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>45</span><span class="text-up">24</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+
+          <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/polo3.png" alt="Polo gris con cuello redondo y estampado de Dj Bl3nd">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Polo gris con cuello redondo y estampado de Dj Bl3nd</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>63</span><span class="text-up">84</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+
+          <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/polo4.png" alt="Camiseta Deportiva con cuello en V, Wondertu azul">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Camiseta Deportiva con cuello en V, Wondertu azul</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>63</span><span class="text-up">84</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+
+          <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/polo5.png" alt="Polo negro estampado alien verde">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Polo negro estampado alien verde</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>63</span><span class="text-up">84</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div> -->
+          
+          <!-- Pantalones -->
+         <!--  <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/pant1.png" alt="Jogger Verde militar, bolsillos en los muslos">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Jogger Verde militar, bolsillos en los muslos</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>83</span><span class="text-up">84</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+
+          <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/pant2.png" alt="Pantalon azul marino extra large">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Pantalon azul marino extra large</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>94</span><span class="text-up">24</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+
+          <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/pant3.png" alt="Jean clasico azul claro wide legs">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Jean clasico azul claro wide legs</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>98</span><span class="text-up">64</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+
+          <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/pant4.png" alt="Pantalon de vestir verde militar suelto">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Pantalon de vestir verde militar suelto</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>78</span><span class="text-up">64</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+
+          <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/pant5.png" alt="Pantalon de vestir formal color crema">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Pantalon de vestir formal color crema</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>78</span><span class="text-up">64</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div> -->
+          <!-- pijamas -->
+          <!-- <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/pijama1.png" alt="Conjunto Pijama con short oscuro">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Conjunto Pijama con short oscuro</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>104</span><span class="text-up">64</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+
+          <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/pijama2.png" alt="Conjunto Pijama blanco/celeste">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Conjunto Pijama blanco/celeste</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>108</span><span class="text-up">64</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+
+          <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/pijama3.png" alt="Conjunto Pijama de verano camisa/short verde/azul">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Conjunto Pijama de verano camisa/short verde/azul</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>78</span><span class="text-up">94</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div> -->
+          <!-- poleras -->
+          <!-- <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/polera1.png" alt="Polera negra, marron interna con capucha y un bolsillo tipo canguro">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Polera negra, marron interna con capucha y un bolsillo tipo canguro</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>88</span><span class="text-up">64</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+
+          <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/polera2.png" alt="Sobrecamisa con botones marrones, interior cobertor blanco con capucha">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Sobrecamisa con botones marrones, interior cobertor blanco con capucha</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>118</span><span class="text-up">64</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+
+          <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/polera3.png" alt="Polera Gris, con bordes negros y un bolsillo tipo canguro">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Polera Gris, con bordes negros y un bolsillo tipo canguro</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>88</span><span class="text-up">64</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+
+          <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/polera4.png" alt="Sobrecamisa gris a rayas marrones con capucha">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Sobrecamisa gris a rayas marrones con capucha</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>117</span><span class="text-up">64</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div> -->
+          <!-- chompas -->
+          <!-- <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/chompa1.png" alt="Chompa gris tejido a lana con botones en el pecho y capucha">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Chompa gris tejido a lana con botones en el pecho y capucha</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>118</span><span class="text-up">64</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+
+          <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/chompa2.png" alt="Chompa marron formal a rayas">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Chompa marron formal a rayas</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>88</span><span class="text-up">63</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+
+          <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/chompa3.png" alt="Chompa tricolor: negro, crema, marron slim fit, cuello redondo">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Chompa tricolor: negro, crema, marron slim fit, cuello redondo</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>88</span><span class="text-up">63</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+
+          <div class="producto card mb-3">
+            <figure class="mb-0">
+              <img src="../assets/chompa4.png" alt="Chompa tricolor: negro, crema, marron slim fit, cuello redondo">
+            </figure>
+            <div class="card-body d-flex justify-content-between flex-wrap align-items-center">
+              <h5 class="card-title">Chompa gradiente Bicolor: vino y blanco slim fit, tejido a lana</h5>
+              <p class="card-text mb-0"><span class="text-up">$</span><span>108</span><span class="text-up">93</span></p>
+              <button class="btn btn-primary"><span>Agregar</span> <i class="bi bi-cart-fill"></i></button>
+            </div>
+          </div>
+ -->
+        </div>
+      </div>
+      <!-- Mapa -->
+      <div class="row mapa py-3 align-items-center justify-content-center">
+        <div class="col-12 col-md-5">
+          <h2 class="py-2">Encuentranos en:</h2>
+  
+          <ul class="nav" role="tablist">
+            <li class="nav-item" role="presentation">
+              <span class="nav-link d-md-block px-md-0 active" data-bs-toggle="tab" data-bs-target="#tienda1">CC - Real Plaza Salaverry</span>
+              <div class="d-none d-md-block">
+                <p><span class="icono"><i class="bi bi-geo-fill"></i></span> Av. Gral. Salaverry 2370, Jesús María 15076</p>
+                <p><span class="icono"><i class="bi bi-calendar-minus"></i></span> 11am - 9:30pm</p>
+              </div>
+            </li>
+            <li class="nav-item" role="presentation">
+              <span class="nav-link d-md-block px-md-0" data-bs-toggle="tab" data-bs-target="#tienda2">Miraflores Indian Market</span>
+              
+              <div class="d-none d-md-block">
+                <p><span class="icono"><i class="bi bi-geo-fill"></i></span> Av. Petit Thouars 5321</p>
+                <p><span class="icono"><i class="bi bi-calendar-minus"></i></span> 12pm - 7:00pm</p>
+              </div>
+            </li>
+          </ul>
+  
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="tienda1" role="tabpanel">
+              <p><iframe id="map-canvas1" class="map_part" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=Real Plaza Salaverry&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></p>
+            </div>
+            <div class="tab-pane fade" id="tienda2" role="tabpanel">
+              <p><iframe id="map-canvas2" class="map_part" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=Av. Petit Thouars 5321, Miraflores 15074&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="p-4">
+    <div class="title pt-4 pb-2 text-center">
+      <h2 class="position-relative mb-0">
+        <span class="store-name">El Fachero</span>
+        <span class="position-absolute translate-middle badge">
+          <i class="bi bi-shop"></i>
+        </span>
+      </h2>
+    </div>
+    <hr />
+      <nav>
+        <div class="navItem">
+          <input type="checkbox" name="productos" id="productos" hidden class="d-md-none" />
+          <label for="productos" class="navItem_head position-relative p-1 px-3">
+            <span class="navItem_head_title">Tienda</span>
+            <span class="icon eye_fill d-md-none">
+              <i class="bi bi-eye-fill"></i>
+            </span>
+            <span class="icon eye_slash d-md-none">
+              <i class="bi bi-eye-slash"></i>
+            </span>
+          </label>
+          <ul>
+            <li>polos</li>
+            <li>poleras</li>
+            <li>pantalones</li>
+            <li>accesorios</li>
+            <li>casacas</li>
+            <li>pijamas</li>
+            <li>calzados</li>
+          </ul>
+          <hr class="d-md-none"/>
+        </div>
+        <div class="navItem">
+          <input type="checkbox" name="empresa" id="empresa" hidden class="d-md-none" />
+          <label for="empresa" class="navItem_head position-relative p-1 px-3">
+            <span class="navItem_head_title">La Empresa</span>
+            <span class="icon eye_fill d-md-none">
+              <i class="bi bi-eye-fill"></i>
+            </span>
+            <span class="icon eye_slash d-md-none">
+              <i class="bi bi-eye-slash"></i>
+            </span>
+          </label>
+          <ul>
+            <li>nosotros</li>
+            <li>tiendas</li>
+            <li>blogs</li>
+          </ul>
+          <hr class="d-md-none"/>
+        </div>
+        <div class="navItem">
+          <input type="checkbox" name="legales" id="legales" hidden class="d-md-none" />
+          <label for="legales" class="navItem_head position-relative p-1 px-3">
+            <span class="navItem_head_title">Legales</span>
+            <span class="icon eye_fill d-md-none">
+              <i class="bi bi-eye-fill"></i>
+            </span>
+            <span class="icon eye_slash d-md-none">
+              <i class="bi bi-eye-slash"></i>
+            </span>
+          </label>
+          <ul>
+            <li>términos y condiciones</li>
+            <li>condiciones de Envío</li>
+            <li>políticas de privacidad</li>
+            <li>políticas de devolución</li>
+          </ul>
+          <hr class="d-md-none"/>
+        </div>
+        <div class="navItem contacto d-none d-md-block">
+            <label class="navItem_head position-relative p-1 px-0">
+                <span class="navItem_head_title">Contacto y Ventas</span>
+            </label>
+            <p class="mb-0"><i class="bi bi-whatsapp"></i> (305)-306-2242</p>
+            <span class="text-small d-inline-block my-2">Horario de Atención</span>
+            <p class="mb-0"> Lunes a Viernes <br />
+                08:00 a.m - 6:00 p.m <br />
+                Sábados <br />
+                09:00 a.m - 12:00 p.m
+            </p>
+        </div>
+        <div class="navItem social mt-md-3">
+          <input type="checkbox" name="social" id="social" hidden class="d-md-none" />
+          <label for="social" class="navItem_head position-relative p-1 px-3 px-md-0">
+            <span class="navItem_head_title">Social Media</span>
+            <span class="icon eye_fill d-md-none">
+              <i class="bi bi-eye-fill d-md-none"></i>
+            </span>
+            <span class="icon eye_slash d-md-none">
+              <i class="bi bi-eye-slash"></i>
+            </span>
+          </label>
+          <ul>
+            <li>
+              <i class="bi bi-reddit"></i>
+            </li>
+            <li>
+              <i class="bi bi-facebook"></i>
+            </li>
+            <li>
+              <i class="bi bi-discord"></i>
+            </li>
+            <li>
+              <i class="bi bi-twitter"></i>
+            </li>
+            <li>
+              <i class="bi bi-instagram"></i>
+            </li>
+          </ul>
+          <hr class="d-md-none"/>
+        </div>
+      </nav>
+    <hr class="d-none d-md-block"/>
+    <div class="f_derechos pt-4 text-center">
+      <p>&copy; 2024 El Fachero International Textil Industries</p>
+    </div>
+  </footer>
+  
+  <!-- AOS animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- bootstrap JS cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="../js/filtroTiends.js"></script>
+</body>
+</html>

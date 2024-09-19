@@ -1,0 +1,589 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+.intro {
+  background-color: #c98574;
+  overflow: hidden;
+  max-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro_big_icon {
+  font-size: 5rem;
+  color: #fffefe;
+  opacity: 0.15;
+}
+.intro_mensaje {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: light;
+  color: #fffefe;
+  font-family: "Fredoka", sans-serif;
+}
+.intro_mensaje span.intro_icon {
+  font-size: 1.2rem;
+}
+
+nav.navbar {
+  background-color: #fffefe;
+}
+
+nav.navbar a.navbar-brand {
+  color: #4b5b6d;
+  font-family: "Fredoka", sans-serif;
+}
+nav.navbar a.navbar-brand .title {
+  font-size: 1.8rem;
+}
+nav.navbar a.navbar-brand .sub-title {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+}
+nav.navbar a.navbar-brand span {
+  color: #4b5b6d;
+  top: 1rem;
+  right: -2.5rem;
+}
+
+nav.navbar ul.navbar-nav a.nav-link.active,
+nav.navbar ul.navbar-nav a.nav-link:hover {
+  color: #4b5b6d !important;
+  font-weight: bold !important;
+}
+
+/* carrito link */
+nav.navbar ul.navbar-nav li.nav-item:last-child a.nav-link {
+  position: relative;
+}
+
+nav.navbar ul.navbar-nav li.nav-item:last-child a.nav-link span.badge {
+  left: 90px;
+}
+
+.carousel .carousel-inner .carousel-item .dark-bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption {
+  font-family: "Fredoka", sans-serif;
+  z-index: 3;
+}
+
+.carousel .carousel-inner .carousel-item:nth-child(even) .carousel-caption {
+  top: 20%;
+}
+
+main .featured {
+  background-color: #fffefe;
+}
+
+.featured figure.model img {
+  border-radius: 0.4rem;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.featured .outfits .title {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.featured .outfits .title .linea {
+  flex-grow: 1; /* La línea ocupará todo el espacio disponible */
+  height: 6px;
+  border-radius: 6px;
+  background-color: #c98574;
+  margin-right: 10px; /* Espacio entre la línea y el texto */
+}
+.featured .outfits .title .text {
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.8rem;
+}
+
+.featured .outfits figure {
+  margin: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+.featured .outfits figure img {
+  cursor: pointer;
+  border-radius: 0.4rem;
+  width: 190px;
+  height: auto;
+  object-fit: contain;
+}
+
+.newsletter {
+  background-color: #c98574;
+  position: relative;
+  width: 70%;
+  margin: -5rem auto;
+  border-radius: 0.3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.newsletter h1 {
+  font-size: 1.4rem;
+  font-family: "Fredoka", sans-serif;
+  color: #fffefe;
+}
+.newsletter #subscribe {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.newsletter #subscribe:focus {
+  outline: none;
+  box-shadow: none;
+}
+.newsletter input.button {
+  font-size: 1rem;
+  font-family: "Fredoka", sans-serif;
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  color: #000;
+  background-color: #f2ede5;
+  cursor: pointer;
+}
+
+.featured {
+  padding-bottom: 100px;
+}
+
+main .ventajas {
+  padding-top: 100px;
+}
+
+main .ventajas {
+  background-color: #f2ede5;
+}
+main .ventajas .icono {
+  color: #4b5b6d;
+  font-size: 2rem;
+}
+main .ventajas p {
+  font-family: "Fredoka", sans-serif;
+}
+main .ventajas p.ventaja {
+  font-size: 1.2em;
+}
+
+main .ventajas p:not(p.ventaja) {
+  font-size: 0.8em;
+}
+
+main .ventajas .row > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .ventajas .row > div .texto {
+  text-align: center;
+}
+main .ventajas .row > div .texto .ventaja {
+  font-weight: 500;
+}
+
+main .formulario {
+  background-color: #fffefe;
+}
+
+main .formulario + .ventajas {
+  padding-top: 2rem;
+}
+
+/* main .tienda .tiendaMenu{
+  background-color: $d-blue;
+
+  h1,
+  ul.nav a.nav-link{
+    color: $white;
+    font-family: $ff;
+  } 
+
+  ul.nav a.nav-link{
+    text-transform: capitalize;
+    color: $white;
+    font-family: $ff;
+    border-radius:0.6rem;
+
+    &.active{
+      color: $brownie !important;
+      background-color: $cream;
+    }
+  } 
+}
+// mansory layout 
+main .tienda .mansoryLayout{
+  columns: 260px 4;
+  column-gap: 1rem; 
+
+  .producto{
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+
+    a{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background-color: $dark-bg;
+      display: grid;
+      place-items: center;
+      font-family: $ff;
+      font-size: 1.4rem;
+      color: $cream;
+      text-decoration: none;
+      opacity: 0;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+  }
+
+  figure img{
+    width: 100%;
+    height: auto;
+  }
+} */
+main .tienda .tiendaMenu {
+  background-color: #4b5b6d;
+}
+main .tienda .tiendaMenu h1,
+main .tienda .tiendaMenu ul.nav button.filter-btn {
+  color: #fffefe;
+  font-family: "Fredoka", sans-serif;
+}
+main .tienda .tiendaMenu ul.nav button.filter-btn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0.4em 1em;
+  text-transform: capitalize;
+  color: #fffefe;
+  font-family: "Fredoka", sans-serif;
+  border-radius: 0.6rem;
+}
+main .tienda .tiendaMenu ul.nav button.filter-btn.active, main .tienda .tiendaMenu ul.nav button.filter-btn:hover {
+  color: #c98574 !important;
+  background-color: #f2ede5;
+}
+
+main .tienda .mansoryLayout {
+  columns: 260px 4;
+  column-gap: 1rem;
+}
+main .tienda .mansoryLayout .producto {
+  break-inside: avoid;
+  overflow: hidden;
+}
+main .tienda .mansoryLayout .producto figure img {
+  width: 100%;
+  height: auto;
+}
+main .tienda .mansoryLayout .producto h5.card-title,
+main .tienda .mansoryLayout .producto button.btn,
+main .tienda .mansoryLayout .producto p.card-text {
+  font-family: "Fredoka", sans-serif;
+}
+main .tienda .mansoryLayout .producto p.card-text {
+  display: flex;
+}
+main .tienda .mansoryLayout .producto p.card-text span {
+  font-size: 2rem;
+}
+main .tienda .mansoryLayout .producto p.card-text span.text-up {
+  font-size: 1em;
+  padding-top: 10px;
+}
+
+main .tienda .mapa {
+  background-color: #f2ede5;
+}
+main .tienda .mapa h2 {
+  font-family: "Fredoka", sans-serif;
+}
+main .tienda .mapa ul.nav .nav-link {
+  cursor: pointer;
+  color: #c98574;
+  font-family: "Fredoka", sans-serif;
+}
+main .tienda .mapa ul.nav .nav-link.active {
+  text-decoration: underline;
+}
+main .tienda .mapa .tab-content .tab-pane iframe {
+  width: 100%;
+  height: 350px;
+}
+
+main .carrito table td.deleteIcon {
+  font-size: 1.2rem;
+}
+main .carrito table td.deleteIcon:hover {
+  color: #fb6c6d;
+  cursor: pointer;
+}
+
+/* main .carrito table td.producto figcaption{
+  text-transform: capitalize;
+} */
+main .carrito table td.quantityActions div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .carrito table td.quantityActions span {
+  padding: 0.5rem;
+}
+main .carrito table td.quantityActions span i {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+main .carrito table td.quantityActions span i.bi-plus-circle {
+  color: #0d6efd;
+}
+main .carrito table td.quantityActions span i.bi-dash-circle {
+  color: #fb6c6d;
+}
+
+footer {
+  color: #fffefe;
+  font-family: "Fredoka", sans-serif;
+  background-color: #4b5b6d;
+}
+footer .title {
+  font-size: 2rem;
+}
+footer .title span.store-name {
+  font-weight: 300;
+}
+footer .title span i {
+  font-size: 0.8em;
+}
+
+footer nav .navItem .navItem_head {
+  width: 100%;
+  cursor: pointer;
+}
+footer nav .navItem .navItem_head_title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+footer nav .navItem .navItem_head span.icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+footer nav .navItem .navItem_head span.icon.eye_fill {
+  display: none;
+}
+
+footer nav .navItem ul {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer nav .navItem ul li {
+  text-transform: capitalize;
+  padding: 0.6em 1.6em;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+footer nav .navItem ul li:hover {
+  text-decoration: underline;
+}
+
+footer nav .navItem input:checked ~ ul,
+footer nav .navItem input:checked ~ label span.icon.eye_fill {
+  display: block;
+}
+
+footer nav .navItem input:checked ~ label span.icon.eye_slash {
+  display: none;
+}
+
+footer nav .navItem.social ul {
+  text-align: center;
+}
+footer nav .navItem.social ul li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+footer nav .navItem.social ul li:hover {
+  transform: scale(1.1);
+}
+footer nav .navItem.social ul li i {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 330px) {
+  .featured .outfits figure img {
+    width: 280px;
+  }
+  main .ventajas .row > div {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  main .ventajas .row > div .icono {
+    padding: 10px;
+  }
+  main .ventajas .row > div .texto {
+    text-align: left;
+    padding: 10px 0 0 10px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .intro_mensaje span.intro_icon {
+    font-size: 1.8rem;
+  }
+  nav.navbar ul.navbar-nav li.nav-item:last-child a.nav-link span.badge {
+    top: 0 !important;
+    left: 100%;
+  }
+  .carousel .carousel-inner .carousel-item:nth-child(even) .carousel-caption {
+    top: 80%;
+  }
+  .carousel .carousel-inner .carousel-item:nth-child(odd) .carousel-caption {
+    top: 20%;
+  }
+  .featured .outfits .title .text {
+    font-size: 2.4rem;
+  }
+  .featured .outfits figure img {
+    width: 100%;
+    max-height: 600px;
+  }
+  footer nav .navItem .navItem_head_title {
+    font-size: 1rem;
+  }
+  footer nav .navItem ul li {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .newsletter {
+    flex-direction: row;
+    width: 80%;
+    margin: -2.4rem auto;
+  }
+  .newsletter form {
+    height: 38px;
+    display: flex;
+  }
+  .newsletter #subscribe {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .newsletter input.button {
+    width: auto !important;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .featured {
+    padding-bottom: 45px;
+  }
+  main .ventajas {
+    padding-top: 3rem;
+  }
+  main .ventajas .row > div {
+    display: block;
+  }
+  main .ventajas .row > div .texto {
+    text-align: center;
+    padding: 0;
+  }
+  main .tienda .mapa ul.nav .nav-link {
+    font-size: 1.2rem;
+  }
+  main .tienda .mapa .tab-content .tab-pane iframe {
+    height: 450px;
+  }
+  /* Carrito */
+  main .carrito table td.producto figure {
+    max-width: 300px;
+  }
+  footer nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(0, max-content);
+  }
+  footer nav .navItem:first-child {
+    grid-row: 1/span 2;
+  }
+  footer nav .navItem:nth-child(3) {
+    grid-column: 3/span 2;
+  }
+  footer nav .navItem:nth-child(4) {
+    grid-column: 5/span 2;
+  }
+  footer nav .navItem:last-child {
+    grid-column: 5/span 2;
+  }
+  footer nav .navItem ul li {
+    font-size: 0.96rem;
+  }
+  footer nav .navItem .navItem_head {
+    cursor: default;
+  }
+  footer nav .navItem .navItem_head_title {
+    font-size: 1.1rem;
+  }
+  footer nav .navItem ul {
+    display: block;
+  }
+  footer nav .navItem.contacto span.text-small {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  footer nav .navItem.contacto p {
+    line-height: 2;
+    font-size: 0.88rem;
+  }
+  footer nav .navItem.social ul li {
+    margin: 0 0.1rem;
+    padding: 0.4em;
+  }
+  footer nav .navItem.social ul li i {
+    font-size: 1.4rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
